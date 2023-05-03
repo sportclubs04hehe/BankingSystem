@@ -20687,9 +20687,13 @@ div.tagsinput {
           font-size: 0.9375rem;
           line-height: 1;
           vertical-align: middle; }
-        .sidebar .nav .nav-item .nav-link .badge {
-          margin-right: auto;
-          margin-left: 1rem; }
+            .sidebar .nav .nav-item .nav-link .menu-title:hover{
+                color:white !important
+            }
+            .sidebar .nav .nav-item .nav-link .badge {
+                margin-right: auto;
+                margin-left: 1rem;
+            }
       .sidebar .nav .nav-item.active > .nav-link {
         background: #0f1015;
         position: relative; }
@@ -20865,8 +20869,8 @@ div.tagsinput {
         .sidebar .nav.sub-menu .nav-item:hover {
           background: transparent; }
     .sidebar .nav:not(.sub-menu) > .nav-item:hover:not(.nav-category):not(.account-dropdown) > .nav-link {
-      background: #0f1015;
-      color: #ffffff; }
+      background: blue;
+      color: white; }
     .sidebar .nav .menu-items:nth-child(5n+1) .nav-link .menu-icon i {
       color: #0090e7; }
     .sidebar .nav .menu-items:nth-child(5n+2) .nav-link .menu-icon i {

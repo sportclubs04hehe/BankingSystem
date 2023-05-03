@@ -23,6 +23,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Banking.DataAccess\Banking.DataAccess.csproj" />
     <ProjectReference Include="..\Banking.Models\Banking.Models.csproj" />
+    <ProjectReference Include="..\Banking.UAUI\Banking.UAUI.csproj" />
   </ItemGroup>
 
 </Project>
