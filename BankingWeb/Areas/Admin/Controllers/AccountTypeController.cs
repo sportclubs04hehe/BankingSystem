@@ -7,8 +7,7 @@ using System.Data;
 
 namespace BankingWeb.Areas.Admin.Controllers
 {
-    [Area("Admin")]
-    //,Authorize(Roles = SD.Role_Admin)
+    [Area("Admin"), Authorize(Roles = SD.Role_Admin)]
     public class AccountTypeController : Controller
     {
             private readonly IUnitOfWork _unitOfWork;

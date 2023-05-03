@@ -16,12 +16,6 @@ namespace Banking.DataAccess.Migrations
                 maxLength: 100,
                 nullable: true);
 
-            migrationBuilder.AddColumn<decimal>(
-                name: "Balance",
-                table: "AspNetUsers",
-                type: "decimal(18,2)",
-                nullable: true);
-
             migrationBuilder.AddColumn<string>(
                 name: "Discriminator",
                 table: "AspNetUsers",
@@ -76,10 +70,6 @@ namespace Banking.DataAccess.Migrations
         {
             migrationBuilder.DropColumn(
                 name: "Address",
-                table: "AspNetUsers");
-
-            migrationBuilder.DropColumn(
-                name: "Balance",
                 table: "AspNetUsers");
 
             migrationBuilder.DropColumn(

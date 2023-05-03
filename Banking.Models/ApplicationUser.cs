@@ -19,10 +19,6 @@ namespace Banking.Models
         [Phone(ErrorMessage = "Please enter a valid phone number."), Display(Name = "Phone Number")]
         public string? PhoneNumber { get; set; }
 
-        [Column(TypeName = "decimal(18,2)")]
-        [Range(0, 9999999999999999.99, ErrorMessage = "The {0} field must be between {1} and {2}.")]
-        public decimal? Balance { get; set; }
-
         [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at most {1} characters long.", MinimumLength = 5)]
         public string? Address { get; set; }
 
@@ -32,11 +28,14 @@ namespace Banking.Models
 
         [Range(0, int.MaxValue, ErrorMessage = "The {0} field must be between {1} and {2}.")]
         public int? InvalidLoginAttempts { get; set; }
+        [Display(Name = "Postal Code")]
         public string? PostalCode { get; set; }
-
-        [DataType(DataType.DateTime)]
-        [Display(Name = "Last Login Date")]
-        public DateTime? LastLoginDate { get; set; }
+        [DataType(DataType.Date)]
+        [Display(Name = "Date of Birth")]
+        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
+        public DateTime? DateOfBirth { get; set; }
+        [StringLength(12),Display(Name = "Identity Card Number")]
+        public string? SoCanCuocCongDan { get; set; }
         public Gender? gender { get; set; }
 
         public enum Gender

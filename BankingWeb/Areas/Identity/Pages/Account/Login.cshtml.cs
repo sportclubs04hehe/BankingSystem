@@ -82,6 +82,10 @@ namespace BankingWeb.Areas.Identity.Pages.Account
             /// </summary>
             [Display(Name = "Remember me?")]
             public bool RememberMe { get; set; }
+
+            [DataType(DataType.DateTime)]
+            [Display(Name = "Last Login Date")]
+            public DateTime? LastLoginDate { get; set; }
         }
 
         public async Task OnGetAsync(string returnUrl = null)
@@ -115,7 +119,7 @@ namespace BankingWeb.Areas.Identity.Pages.Account
                 if (result.Succeeded)
                 {
                     _logger.LogInformation("User logged in.");
-                    return RedirectToAction("Index", "AccountType", new { area = "Admin" });
+                    return RedirectToAction("Index", "HomeManagerAccount", new { area = "Admin" });
                 }
                 if (result.RequiresTwoFactor)
                 {
