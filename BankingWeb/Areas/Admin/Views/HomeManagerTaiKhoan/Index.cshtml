@@ -1,0 +1,37 @@
+﻿@model IEnumerable<TaiKhoan>
+<partial name="_Notioutfores" />
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <h2 class="text-uppercase text-dark">Account Type List</h2>
+        </div>
+        <div class="col-md-6 text-end">
+            <a class="btn btn-success float-right btn-lg" asp-controller="HomeManagerTaiKhoan" asp-action="Upsert">
+                <i class="bi bi-plus-square"></i>  New Record
+            </a>
+        </div>
+    </div>
+
+
+    <div class="card-body">
+        <h4 class="card-title">Basic Table</h4>
+        <div class="table-responsive">
+            <table width="100%" id="TaiKhoan" class="table">
+                <thead>
+                    <tr>
+                        <th class="text-dark">Account Number</th>
+                        <th class="text-dark">Balance</th>
+                        <th class="text-dark">Account Name</th>
+                        <th class="text-dark">Account Type</th>
+                        <th class="text-center text-dark">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+@section Scripts{
+    <script src="~/js/taikhoan.js"></script>
+}

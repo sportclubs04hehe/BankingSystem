@@ -119,7 +119,7 @@ namespace BankingWeb.Areas.Identity.Pages.Account
                 if (result.Succeeded)
                 {
                     _logger.LogInformation("User logged in.");
-                    return RedirectToAction("Index", "HomeManagerAccount", new { area = "Admin" });
+                    return RedirectToAction("Index", "HomeManagerTaiKhoan", new { area = "Admin" });
                 }
                 if (result.RequiresTwoFactor)
                 {

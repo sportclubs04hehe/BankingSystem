@@ -20656,8 +20656,12 @@ div.tagsinput {
         -webkit-transition-property: color;
         height: 46px;
         border-radius: 0px 100px 100px 0px; }
+        .sidebar .nav .nav-item .nav-link:hover{
+            color: white !important;
+        }
         .sidebar .nav .nav-item .nav-link i {
-          color: inherit; }
+            color: inherit;
+        }
           .sidebar .nav .nav-item .nav-link i.menu-icon {
             font-size: 1rem;
             line-height: 1;
@@ -20695,19 +20699,19 @@ div.tagsinput {
                 margin-left: 1rem;
             }
       .sidebar .nav .nav-item.active > .nav-link {
-        background: #0f1015;
+        background: blue;
         position: relative; }
         .sidebar .nav .nav-item.active > .nav-link:before {
           content: "";
           width: 3px;
           height: 100%;
-          background: #0090e7;
+          background: blue;
           display: inline-block;
           position: absolute;
           left: 0;
           top: 0; }
         .sidebar .nav .nav-item.active > .nav-link .menu-title {
-          color: #ffffff; }
+          color: white; }
         .sidebar .nav .nav-item.active > .nav-link i {
           color: #ffffff; }
       .sidebar .nav .nav-item.nav-profile .nav-link {

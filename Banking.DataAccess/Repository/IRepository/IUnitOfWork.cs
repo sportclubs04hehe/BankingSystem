@@ -9,6 +9,8 @@ namespace Banking.DataAccess.Repository.IRepository
     public interface IUnitOfWork
     {
         IAccountTypeRepository accountTypeRepository { get; }
+        ICardRepository cardRepository { get; }
+        IApplicationUserTypeRepository applicationUser { get; }
 
         void Save();
     }

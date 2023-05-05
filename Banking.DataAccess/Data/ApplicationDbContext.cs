@@ -13,6 +13,7 @@ namespace Banking.DataAccess.Data
         }
 
         public DbSet<AccountType> accountTypes { get; set; }
+        public DbSet<Card> cards { get; set; }
         public DbSet<ApplicationUser> users { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

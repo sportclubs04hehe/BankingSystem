@@ -13,11 +13,15 @@ namespace Banking.DataAccess.Repository
         private ApplicationDbContext _db;
 
         public IAccountTypeRepository accountTypeRepository { get; private set; }
+        public ICardRepository cardRepository { get; private set; }
+        public IApplicationUserTypeRepository applicationUser { get; private set; }
 
         public UnitOfWork(ApplicationDbContext db)
         {
             _db = db;
             this.accountTypeRepository = new AccountTypeRepository(_db);
+            this.cardRepository = new CardRepository(_db);
+            this.applicationUser = new ApplicationUserRepository(_db);
         }
 
         public void Save()
